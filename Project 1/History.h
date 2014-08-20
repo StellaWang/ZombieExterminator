@@ -1,0 +1,22 @@
+//History interface
+
+#ifndef HISTORY_H
+#define HISTORY_H
+
+#include "globals.h"
+
+class History
+{
+public:
+    History(int nRows, int nCols);
+    bool record(int r, int c);
+    void display() const;
+private:
+    int m_rows;
+    int m_cols;
+    int m_diedrows;
+    int m_diedcols;
+    char m_Historygrid[MAXROWS][MAXCOLS];
+};
+
+#endif
